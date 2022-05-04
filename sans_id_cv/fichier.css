@@ -1,0 +1,537 @@
+/**
+ * @author Benjamin Peronne
+ * @email contact@benjaminperonne.fr
+ * @create date 2020-11-07 22:21:23
+ * @modify date 2020-11-07 22:21:23
+ * @desc [CV_Projet - Version sans id ]
+ */
+
+ @media screen and (max-width: 600px) {
+   #flex {
+     display: flex;
+     flex-direction: column !important;
+   }
+
+   .container {
+     width: 100% !important;
+   }
+ }
+
+
+ .container {
+   width: 50%;
+   border-radius: 50%;
+ }
+
+ .card-img-top {
+   border-radius: 0%;
+ }
+
+ #flex {
+   display: flex;
+   justify-content: space-around;
+
+   margin-top: 10em;
+ }
+
+ /* ======================================= */
+ /* bootsrap */
+ /* Expérience.html et Formation.html */
+ /* ======================================= END*/
+
+
+
+html
+{
+  width:100%;
+  height:100%;
+}
+body
+{
+  margin:auto;
+  width:100%;
+  height:100%;
+}
+
+/* regle CSS générique */
+/* ======================================================================= */
+/* ======================= Responsive Design Begin ======================= */
+/* ======================================================================= */
+
+@media screen and (max-width: 1920px) 
+{
+  /* Div plus d'info marge */
+  .class_section > section:nth-child(4) 
+  {
+    margin-top: -2.6% !important;
+  }
+}
+
+@media screen and (max-width: 1366px)
+ {
+   /* Div plus d'info marge */
+  .class_section > section:nth-child(4) 
+  {
+    margin-top: -7.5% !important;
+
+  }
+}
+
+@media screen and (max-width: 800px) 
+{
+  /* Div plus d'info marge */
+  .class_section > section:nth-child(4) 
+  {
+    margin-top: -5.5% !important;
+  }
+
+  header > div:nth-child(2)
+  {
+    margin-top: -5% !important;
+  }
+
+  header > div:nth-child(2) > h1 
+  {
+    font-size: 1.5em !important;
+  }
+ 
+  header > div:nth-child(1) > img
+  {
+    width: 50% !important;
+    height: 50% !important;
+    margin-left: 15%;  
+  }
+
+  header > div:nth-child(1) > p
+  {
+    margin-top: -1%;
+    font-size: 0.8em !important;
+  }
+
+  header > div:nth-child(2) > p 
+  {
+    font-size: 0.7em !important;
+    word-break: break-all;
+  }
+
+  /* Div formation moving the table to avoid overflow  #1*/
+  .class_section > section:nth-child(2) > article:nth-child(2) > table
+  {
+    margin-right: 20% !important;
+  }
+  /* Div formation moving the table to avoid overflow  #2*/
+  .class_section > section:nth-child(2) > article:nth-child(3) > table 
+  {
+    margin-right: 20% !important;
+  }
+  /* Div formation moving the table to avoid overflow  #3*/
+  .class_section > section:nth-child(2) > article:nth-child(4) > table 
+  {
+    margin-right: 20% !important;
+  }
+}
+
+@media print
+{
+  /* regle CSS lors de l'impression */
+
+}
+
+/* ======================================================================= */
+/* ======================= Responsive Design End =========================*/
+/* ======================================================================= */
+
+
+p 
+{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+
+/* ======================================================================= */
+/* ===========================  Begin Header ============================= */
+/* ======================================================================= */
+
+header
+{
+  display: flex;
+  width: 70%;
+  /* 25% c'est abusé */
+  height: 20%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  border-radius: 10px;
+  /* flex-direction: column; */
+  background-color: #ebebeb;
+  
+}
+/* -----------------First Div */
+header > div:nth-child(2) > h1
+{
+  font-size: 2em;
+}   
+
+header > div:nth-child(2) > p
+{
+  line-height: 5%;
+} 
+/* -----------------First Div End */
+
+header > div:nth-child(2)
+{
+  width: 60%;
+  margin-top: -30px;
+}
+header > div:nth-child(1)
+{
+  width: 20%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header > div:nth-child(1) > p
+{
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+header > div > img 
+{
+  margin-top: 0.5em;
+  margin-left: 8%;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+/* ======================================================================= */
+/* ============================  Header End ============================== */
+/* ======================================================================= */
+
+/* ======================================================================= */
+/* ===========================  Section Begin ============================ */
+/* ======================================================================= */
+
+.class_section
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+}
+
+/* ===========================  Compétence Begin ============================ */
+/* ------------------------------------ Left begin*/
+.class_section > section:nth-child(1)
+{
+  width: 49%;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  padding-bottom: 1em;
+  /* order: 4; */
+}
+
+.class_section > section:nth-child(1) > h2 
+{
+  color: purple;
+  margin-left: 3%;
+}
+
+.class_section > section:nth-child(1) > article{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-around; 
+  margin-top: -1em;
+}
+
+.class_section > section:nth-child(1) > article > div:nth-child(1)
+{
+  width: 30%;
+  margin-left: 5%;
+}
+
+.class_section > section:nth-child(1) > article > div:nth-child(1) > ul
+{
+  list-style-type: none;
+  margin-left: -10%;
+}
+
+.class_section > section:nth-child(1) > article > div:nth-child(1) > ul > li
+{
+  /* font-size: small; */
+  
+  margin-top: 0.1em;
+  white-space: pre-line;
+}
+.class_section > section:nth-child(1) > article > div:nth-child(2)
+{
+  width: 60%;
+  margin-right: 20%;
+
+}
+
+.class_section > section:nth-child(1) > article > div:nth-child(2) > ul > li
+{
+  line-height: 1.2em;
+  list-style-type: none;  
+}
+progress 
+{
+  width: 100%;
+  margin-top: 0.1em;
+  -webkit-appearance: none; 
+}
+::-webkit-progress-bar 
+{
+  background-color: white;
+  border-style: groove white;
+  border-radius: 0.2em;
+}
+::-webkit-progress-value {
+  background-color: #a7376b;
+  border-radius: 0.2em;
+}
+
+/* ===========================  Compétence End ============================ */
+/* ------------------------------------ Left End*/
+
+/* ===========================  Formation Begin ============================ */
+/* ------------------------------------ Right begin*/
+
+.class_section > section:nth-child(2){
+  width: 49%;
+  height: auto;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  padding-bottom: 1em;
+}
+
+.class_section > section:nth-child(2) > h2 {
+  color: purple;
+  margin-left: 3%;
+}
+
+/* ---------------------------------- begin 1*/
+.class_section > section:nth-child(2) > article:nth-child(2)
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1em;
+  order: 1;
+  
+}
+
+.class_section > section:nth-child(2) > article:nth-child(2) > div:nth-child(1)
+{
+  margin-left: 5%;
+  width: 30%;
+}
+
+.class_section > section:nth-child(2) > article:nth-child(2) > table
+{
+  margin-top: 3%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ---------------------------------- end 1 */
+
+/* ---------------------------------- begin 2*/
+.class_section > section:nth-child(2) > article:nth-child(3) 
+{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.class_section > section:nth-child(2) > article:nth-child(3) > div:nth-child(1) 
+{
+  margin-left: 5%;
+  width: 30%;
+}
+
+.class_section > section:nth-child(2) > article:nth-child(3) > table
+{
+  margin-top: 3%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ---------------------------------- end 2*/
+
+/* ---------------------------------- begin 3*/
+.class_section > section:nth-child(2) > article:nth-child(4) 
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.class_section > section:nth-child(2) > article:nth-child(4) > div:nth-child(1) 
+{
+  margin-left: 5%;
+  width: 30%;
+}
+
+.class_section > section:nth-child(2) > article:nth-child(4) > table 
+{
+  margin-top: 3%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ------------------------------------ Right End*/
+/* ---------------------------------- end 3*/
+/* ===========================  Formation End ============================ */
+/* ======================================== */
+
+
+/* ===========================  Expérience Pro Begin ============================ */
+/* ======================================== */
+
+.class_section > section:nth-child(3) 
+{
+  width: 49%;
+  margin-top: 1em;
+  background-color: #ebebeb;
+  border-radius: 2%;
+  order: 4;
+  padding-bottom: 1em;
+
+}
+
+.class_section > section:nth-child(3) > article
+{
+  margin-top: -1em;
+}
+
+.class_section > section:nth-child(3) > h1 {
+  color: purple;
+  margin-left: 3%;
+}
+
+.class_section > section:nth-child(3) > article > div > img
+{
+  margin-left: 8%;
+  margin-top: -10% ;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.class_section > section:nth-child(3) > article > div > div
+{
+  margin-left: 15%;
+}
+
+.class_section > section:nth-child(3) > article 
+{
+  display: flex;  
+  justify-content: space-between;
+}
+
+.class_section > section:nth-child(3) > article > div 
+{
+  margin-left: 5%;
+  width: 30%;
+}
+
+.class_section > section:nth-child(3) > article > table 
+{
+  margin-top: 2.8%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===========================  Formation End ============================ */
+/* ======================================== */
+
+/* ===========================  Plus d'info Begin ============================ */
+
+.class_section > section:nth-child(4) {
+  margin-top: 1em;
+  width: 49%;
+  /* height: auto; */
+  background-color: #ebebeb;
+  border-radius: 2%;
+  order: 3;
+  align-self: start;
+  padding-bottom: 1em;
+}
+
+/* .class_section > section:nth-child(4) > article
+{
+  margin-top: -1em;
+} */
+
+.class_section > section:nth-child(4) > h1 {
+  color: purple;
+  margin-left: 3%; 
+} 
+
+.class_section > section:nth-child(4) > article > a
+{
+  margin-left: 4%;
+}
+
+.class_section > section:nth-child(4) > article > h1
+{
+  width: 50%;
+  border-style: none none dashed dashed;
+  color: palevioletred;
+  text-indent: 5%;
+  margin-left: 4%;
+}
+
+.class_section > section:nth-child(4) > article > video
+{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+}
+.class_section > section:nth-child(4) > article > p 
+{
+  text-align: center;
+  
+}
+.class_section > section:nth-child(4) > article > table
+{
+  margin-left: auto ;
+  margin-right: auto;
+  border-spacing: 50px 1rem;
+}
+
+/* order-style: dashed groove none dotted; */
+
+/* ===========================  Plus d'info End ============================ */
+
+
+/* ======================================================================= */
+/* ===========================  Section End ============================== */
+/* ======================================================================= */
+
+
+footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 70%;
+  background-color: #ebebeb;
+  border-radius: 10%;
+}
